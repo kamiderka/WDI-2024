@@ -3,8 +3,8 @@
 def zad11(n :int)->None:
     if n == 0:
         print("Każda liczba jest podzielnikiem")
-    n=abs(n)
-    i=1
+    
+    i,n=1,abs(n)
     while i*i < n:
         if n%i == 0: 
             print(i,n//i)
