@@ -23,4 +23,5 @@ assert len_of_longest_arythmetic_subsequence([1,2,3,1,2,3,4,5,1,2,3,4,5,6]) == 6
 assert len_of_longest_arythmetic_subsequence([1]) == -1
 assert len_of_longest_arythmetic_subsequence([1,3,2,4,3,4,3,4,3]) == 2
 assert len_of_longest_arythmetic_subsequence([-1,-2,-3,-4,-5]) == 5
+assert len_of_longest_arythmetic_subsequence([4,1122]) == 2
 print("Ok!")
