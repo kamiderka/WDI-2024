@@ -22,4 +22,6 @@ assert len_of_longest_subsequence([7,6,5,4,3,2,1]) == 1
 assert len_of_longest_subsequence([1,1,1,1,1]) == 1
 assert len_of_longest_subsequence([]) == 0
 assert len_of_longest_subsequence([3123]) == 1
+assert len_of_longest_subsequence([1,2]) == 2
+
 print("OK!")
