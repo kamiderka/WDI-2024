@@ -23,3 +23,14 @@ n = int(input("Podaj numer: "))
 base = int(input("Podaj bazę: "))
 
 print(convert_to_base(n,base))
+
+"""
+___ Garek Content ___
+Garek nie lubi linijki 
+    `converted_number = [None]*bits`
+preferuje wyrażenie listowne. (Problem z referencjami or sth)
+
+zamiast funkcji convert_digit string
+` hex = "01234556789ABCDE"
+
+"""

@@ -3,7 +3,7 @@
 # wartość, jaka wystąpiła w ciągu. Można założyć, że w ciągu znajduje się wystarczająca liczba elementów.
 
 # Zadanie inspirowane chyba insertion sortem
-def kth_highest_number(k:int)->int:
+def kth_highest_element(k:int)->int:
     assert k >0
     top_table = [0]*k
     n = int(input("> "))
@@ -20,4 +20,10 @@ def kth_highest_number(k:int)->int:
     return top_table[0]
 
 k = int(input("Podaj k: "))
-print(str(k)+"-ta największa liczba:",kth_highest_number(k))
+print(str(k)+"-ta największa liczba:",kth_highest_element(k))
+
+"""
+___Garek Content___
+Co mierzymy? 10 największych WARTOŚCI (nie elementy).
+
+"""
