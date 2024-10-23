@@ -8,7 +8,7 @@ def kth_highest_element(k:int)->int:
     top_table = [0]*k
     n = int(input("> "))
     while n != 0:
-        if n>top_table[0]:
+        if n>top_table[0] and n not in top_table: # usuwając drugi warunek sprawdzamy elementy, nie wartości
             i=1
             while i < k and n>top_table[i]:
                 top_table[i-1] = top_table[i]
