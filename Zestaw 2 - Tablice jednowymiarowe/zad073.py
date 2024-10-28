@@ -17,6 +17,7 @@ def has_same_birthday(t :list)->bool:
 def init_birthday_array(n :int)->list:
     return [random_birthday() for _ in range(n)]
 
+# Wyjaśnienie wyników: https://pl.wikipedia.org/wiki/Paradoks_dni_urodzin
 def conduct_bd_experiment(n:int, size=1_000_000)->float:
     result = 0
     for _ in range(size):
