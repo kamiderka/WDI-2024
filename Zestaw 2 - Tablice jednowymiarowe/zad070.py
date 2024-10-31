@@ -19,6 +19,7 @@ def len_of_longest_geo_progression(t :list)->int:
             q = t[i]/t[i-1]
     return max(best_length,counter)
 
+# __Testy__:
 assert len_of_longest_geo_progression([1,2,4,8,4,2, 1, 16, 16]) == 4
 assert len_of_longest_geo_progression([1,1]) == 2
 assert len_of_longest_geo_progression([0]) == 0
