@@ -3,6 +3,9 @@
 # znajdującego się w niej ciągu arytmetycznego o dodatniej różnicy, a długością najdłuższego ciągu arytmetycznego
 # o ujemnej różnicy, przy założeniu, że kolejnymi wyrazami ciągu są elementy tablicy o kolejnych indeksach.
 
+from random import randint
+
+
 def longest_pos_and_neg_arithmetic_subsequence(t :list)->tuple[int,int]:
     if len(t) < 2 or (len(t)==2 and t[0]==t[1]):
         return (0,0)
@@ -28,6 +31,11 @@ def longest_pos_and_neg_arithmetic_subsequence(t :list)->tuple[int,int]:
         best_neg_length = max(best_neg_length, counter)
     return (best_neg_length, best_pos_length)
 
+n = int(input("Podaj długość listy: "))
+t = [randint(1,99) for _ in range(n)]
+print(longest_pos_and_neg_arithmetic_subsequence(t), t)
+
+#__Testy:__
 assert longest_pos_and_neg_arithmetic_subsequence([1,2,3,4,3,2,1,0]) == (5,4)
 assert longest_pos_and_neg_arithmetic_subsequence([1,2,3,4,5,6,7,8]) == (0,8)
 assert longest_pos_and_neg_arithmetic_subsequence([2,2,2,2,2,2,2]) == (0,0)
