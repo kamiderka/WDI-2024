@@ -1,6 +1,6 @@
 # Zadanie 10. Proszę napisać program sprawdzający czy zadana liczba jest pierwszą.
 
-def zad10(n :int)->bool:
+def is_prime(n :int)->bool:
     if n < 2:
         return False
     if n == 2 or n == 3:
@@ -32,4 +32,4 @@ Na kolosie wystarczy wersja z i**i <= n i normalnymi modulo
 """
 
 n = int(input("Podaj liczbę: "))
-print("Is_prime:", zad10(n))
+print("Is_prime:", is_prime(n))
